@@ -5,12 +5,13 @@ public class Main {
         book.setBookAge("1869");
         Author author1 = new Author("Лев", "Толстой");
         Book book1 = new Book("Война и миръ", "1865", author1);
-        System.out.println(book.getBookName());
-        System.out.println(book.getBookAge());
-        System.out.println(author.getFirstName() + " " + author.getLastName());
+        System.out.println(book + "\n");
+        System.out.println(book1);
         System.out.println();
-        System.out.println(book1.getBookName());
-        System.out.println(book1.getBookAge());
-        System.out.println(author1.getFirstName() + " " + author1.getLastName());
+        System.out.println("Итог сравнения имён авторов: " + author.equals(author1));
+        System.out.println("Итог сравнения названия книг: " + book.equals(book1));
+        System.out.println();
+        System.out.println(book.hashCode());
+        System.out.println(book1.hashCode());
     }
 }
